@@ -1,0 +1,64 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Language School
+ * @version 	1.0.0
+ * 
+ * Responsive LearnPress CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+/*-------------------------------------------------------------------------
+
+	1.	Large Monitor
+	2.	Medium Monitor
+	3.	Tablet Monitor
+	4.	Tablet Monitor 950
+	5.	Small Tablet Monitor
+	6.	Phone Monitor
+
+-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 950px) {
+  .cmsmasters_lpr_course.opened-article .post_comments,
+  .cmsmasters_lpr_course.opened-article #respond,
+  .cmsmasters_course_sidebar,
+  .cmsmasters_course_content {
+    padding-right: 0;
+    width: auto;
+    float: none;
+  }
+  .cmsmasters_course_content {
+    margin-bottom: 30px;
+  }
+  .cmsmasters_learnpress_shortcode.cmsmasters_4 .lpr_course_post {
+    width: 50%;
+  }
+  .cmsmasters_learnpress_shortcode.cmsmasters_4 .lpr_course_post:nth-child(2n+1) {
+    clear: both;
+  }
+  .cmsmasters_learnpress_shortcode.cmsmasters_5 .lpr_course_post {
+    width: 50%;
+  }
+  .cmsmasters_learnpress_shortcode.cmsmasters_5 .lpr_course_post:nth-child(5n+1) {
+    clear: none;
+  }
+  .cmsmasters_learnpress_shortcode.cmsmasters_5 .lpr_course_post:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .archive .lpr_course .cmsmasters_img_wrap {
+    float: none;
+    margin: 0 0 30px;
+    width: auto;
+  }
+  .cmsmasters_learnpress_shortcode.cmsmasters_2 .lpr_course_post,
+  .cmsmasters_learnpress_shortcode.cmsmasters_3 .lpr_course_post,
+  .cmsmasters_learnpress_shortcode.cmsmasters_4 .lpr_course_post,
+  .cmsmasters_learnpress_shortcode.cmsmasters_5 .lpr_course_post {
+    width: 100%;
+    float: none;
+  }
+}
